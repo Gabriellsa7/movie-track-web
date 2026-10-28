@@ -14,10 +14,12 @@ const PASSWORD_MIN_LENGTH = 8;
 const PASSWORD_MAX_LENGTH = 72;
 const ISO_DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
 
+// Trim before checking the format, so pasted addresses with spaces still pass.
 export const emailSchema = z
-  .email('Informe um e-mail válido')
+  .string()
   .trim()
-  .toLowerCase();
+  .toLowerCase()
+  .pipe(z.email('Informe um e-mail válido'));
 
 export const passwordSchema = z
   .string()
