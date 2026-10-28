@@ -437,6 +437,13 @@
   resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.2.12.tgz#afefe785949f16ac4cdd1e695935a321572dd56a"
   integrity sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww==
 
+"@hookform/resolvers@^6.0.2":
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/@hookform/resolvers/-/resolvers-6.0.2.tgz#9d7e0c6d7f076b6f8dc7d10190e3c71d7e65d20d"
+  integrity sha512-e2dqUOlaGuirKVOd/iZWk/Yg5zeaGw7t0hSc3LzxL3o7eZGwZkTyEbBL8H52m0wRKEsNLWoMGOiXGHbPHTXlEQ==
+  dependencies:
+    "@standard-schema/utils" "^0.3.0"
+
 "@humanfs/core@^0.19.2":
   version "0.19.2"
   resolved "https://registry.yarnpkg.com/@humanfs/core/-/core-0.19.2.tgz#a8272ca03b2acf492670222b2320b6c421bfde60"
@@ -796,6 +803,11 @@
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/@solid-primitives/utils/-/utils-6.4.1.tgz#aaa9006ac9dfa7b99b1060ab78669a8723ab2962"
   integrity sha512-ISSB5QX1qP2ynrheIpYwc4oKR5Ny4siNuUyf1qZniy+Il+p/PtDB0QK1Dnle8noiHpwRD3gpPdubOC3qI/Zamg==
+
+"@standard-schema/utils@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@standard-schema/utils/-/utils-0.3.0.tgz#3d5e608f16c2390c10528e98e59aef6bf73cae7b"
+  integrity sha512-e7Mew686owMaPJVNNLs55PUvgz371nKgwsc4vxE49zsODpJEnxgxRo2y/OKrqueavXgZNMDVj3DdHFlaSAeU8g==
 
 "@swc/helpers@^0.5.0":
   version "0.5.23"
@@ -3086,6 +3098,11 @@ react-dom@^19.3.1:
   integrity sha512-Y0bARz53lhEC1NMCASs0/j+faB/zqt3R8hpvg1e8+61ZVJ4UL0UdC4cBbXfZMcIuhrfgeILTLe+ZeBCavQPtKQ==
   dependencies:
     scheduler "^0.28.0"
+
+react-hook-form@^7.91.0:
+  version "7.91.0"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.91.0.tgz#751ffa4eef441562b7417727e247446ce7d2a002"
+  integrity sha512-5BEBUnCBwa28AFXYTYmOaB/+CSpJ/+CWVASHEvIGUzFdHyUiPHeRhG7r5hOZ8nZi0yP7pbHdFNXO/p31EKTJFQ==
 
 react-router@^8.5.1:
   version "8.5.1"
