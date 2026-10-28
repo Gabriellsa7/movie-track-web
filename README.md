@@ -25,8 +25,23 @@ TypeScript 7, which `tsc` (typecheck and build) runs.
 
 ```bash
 yarn
-yarn dev            # http://localhost:5173
+cp .env.example .env   # VITE_API_URL, validated at startup
+yarn dev               # http://localhost:5173
 ```
+
+## API types
+
+`src/api/schema.d.ts` is generated from the backend contract and committed;
+never edit it by hand. With the backend repo cloned next to this one
+(`../movie-track`), regenerate it after any contract change:
+
+```bash
+yarn gen:api
+```
+
+`src/api/types.ts` exposes friendly aliases (`TMovie`, `TUser`…), the
+services in `src/api/services/` wrap each route, and every failure reaches the
+app as an `ApiError` with the contract's `code` (`src/api/error-codes.ts`).
 
 ## Scripts
 
@@ -39,6 +54,7 @@ yarn dev            # http://localhost:5173
 | `yarn lint` / `lint:fix`       | ESLint with type-aware rules              |
 | `yarn lint:styles`             | Stylelint on `src/**/*.scss`              |
 | `yarn format` / `format:check` | Prettier                                  |
+| `yarn gen:api`                 | Regenerate `src/api/schema.d.ts`          |
 
 Before opening a PR:
 
