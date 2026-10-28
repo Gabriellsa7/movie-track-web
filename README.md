@@ -1,75 +1,56 @@
-# React + TypeScript + Vite
+# Movie Track — Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Web app (desktop and mobile web) of **Movie Track**, a personal movie log: log
+the movies you watched with a rating and a review, keep a watchlist of the next
+ones, see your stats and browse other people's profiles.
 
-Currently, two official plugins are available:
+It consumes the [Movie Track API](https://github.com/Gabriellsa7/movie-track).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+React 19 · Vite · TypeScript (strict) · SCSS modules · ESLint · Stylelint ·
+Prettier · Husky + commitlint.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The `typescript` package is an alias of `@typescript/typescript6`, because
+typescript-eslint still needs the TypeScript 6 API; `@typescript/native` is
+TypeScript 7, which `tsc` (typecheck and build) runs.
 
-## Expanding the ESLint configuration
+## Requirements
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Node 24 (`.nvmrc`) and Yarn 1
+- The API running on `http://localhost:3000` with
+  `CORS_ORIGINS=http://localhost:5173`
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+yarn
+yarn dev            # http://localhost:5173
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## Scripts
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+| Script                         | What it does                              |
+| ------------------------------ | ----------------------------------------- |
+| `yarn dev`                     | Dev server with HMR                       |
+| `yarn build`                   | Typecheck and production build to `dist/` |
+| `yarn preview`                 | Serve the production build                |
+| `yarn typecheck`               | `tsc -b` (TypeScript 7)                   |
+| `yarn lint` / `lint:fix`       | ESLint with type-aware rules              |
+| `yarn lint:styles`             | Stylelint on `src/**/*.scss`              |
+| `yarn format` / `format:check` | Prettier                                  |
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Before opening a PR:
 
+```bash
+yarn format:check && yarn lint && yarn lint:styles && yarn typecheck && yarn build
 ```
+
+## Conventions
+
+- Files in kebab-case (`movie-card.tsx`, `movie-card.module.scss`); components
+  in PascalCase (`MovieCard`).
+- Interfaces `I*`, type aliases `T*`, enums `E*`, constants `UPPER_SNAKE_CASE`.
+- Code, comments and commits in English; UI texts in pt-BR.
+- Conventional Commits, checked by commitlint on every commit.
+- Imports from `src` use the `@/` alias.
