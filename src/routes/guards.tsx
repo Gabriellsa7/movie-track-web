@@ -1,10 +1,7 @@
 import { Navigate, Outlet, useLocation, useSearchParams } from 'react-router';
+import { SessionSplash } from '@/components/session-splash';
 import { useSessionStore } from '@/stores/session.store';
 import { NEXT_PARAM, ROUTES, safeNextPath } from './routes.constants';
-
-function SessionSplash() {
-  return <p role="status">Carregando…</p>;
-}
 
 export function RequireAuth() {
   const status = useSessionStore((state) => state.status);

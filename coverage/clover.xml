@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1793191071487" clover="3.2.0">
-  <project timestamp="1793191071487" name="All files">
-    <metrics statements="472" coveredstatements="463" conditionals="143" coveredconditionals="128" methods="251" coveredmethods="246" elements="866" coveredelements="837" complexity="0" loc="472" ncloc="472" packages="22" files="66" classes="66"/>
+<coverage generated="1793206233992" clover="3.2.0">
+  <project timestamp="1793206233993" name="All files">
+    <metrics statements="475" coveredstatements="466" conditionals="144" coveredconditionals="129" methods="253" coveredmethods="248" elements="872" coveredelements="843" complexity="0" loc="475" ncloc="475" packages="22" files="68" classes="68"/>
     <package name="src">
       <metrics statements="6" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="app.tsx" path="/home/boruto/movie-track-web/src/app.tsx">
@@ -21,7 +21,7 @@
       <metrics statements="46" coveredstatements="46" conditionals="33" coveredconditionals="32" methods="8" coveredmethods="8"/>
       <file name="api-error.ts" path="/home/boruto/movie-track-web/src/api/api-error.ts">
         <metrics statements="17" coveredstatements="17" conditionals="18" coveredconditionals="18" methods="4" coveredmethods="4"/>
-        <line num="5" count="19" type="stmt"/>
+        <line num="5" count="20" type="stmt"/>
         <line num="13" count="39" type="stmt"/>
         <line num="14" count="39" type="stmt"/>
         <line num="15" count="39" type="stmt"/>
@@ -41,17 +41,17 @@
       </file>
       <file name="client.ts" path="/home/boruto/movie-track-web/src/api/client.ts">
         <metrics statements="28" coveredstatements="28" conditionals="15" coveredconditionals="14" methods="4" coveredmethods="4"/>
-        <line num="6" count="19" type="stmt"/>
-        <line num="25" count="19" type="stmt"/>
-        <line num="26" count="19" type="stmt"/>
-        <line num="29" count="130" type="stmt"/>
-        <line num="32" count="19" type="stmt"/>
-        <line num="38" count="19" type="stmt"/>
+        <line num="6" count="20" type="stmt"/>
+        <line num="25" count="20" type="stmt"/>
+        <line num="26" count="20" type="stmt"/>
+        <line num="29" count="133" type="stmt"/>
+        <line num="32" count="20" type="stmt"/>
+        <line num="38" count="20" type="stmt"/>
         <line num="39" count="108" type="stmt"/>
         <line num="40" count="108" type="cond" truecount="4" falsecount="0"/>
         <line num="41" count="11" type="stmt"/>
         <line num="43" count="108" type="stmt"/>
-        <line num="46" count="19" type="stmt"/>
+        <line num="46" count="20" type="stmt"/>
         <line num="47" count="22" type="stmt"/>
         <line num="48" count="22" type="cond" truecount="1" falsecount="1"/>
         <line num="49" count="22" type="stmt"/>
@@ -72,7 +72,7 @@
       </file>
       <file name="error-codes.ts" path="/home/boruto/movie-track-web/src/api/error-codes.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="2" count="19" type="stmt"/>
+        <line num="2" count="20" type="stmt"/>
       </file>
       <file name="types.ts" path="/home/boruto/movie-track-web/src/api/types.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -165,7 +165,13 @@
       </file>
     </package>
     <package name="src.components">
-      <metrics statements="12" coveredstatements="12" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+      <metrics statements="16" coveredstatements="16" conditionals="3" coveredconditionals="3" methods="9" coveredmethods="9"/>
+      <file name="logo.tsx" path="/home/boruto/movie-track-web/src/components/logo.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="8" count="24" type="stmt"/>
+        <line num="41" count="20" type="stmt"/>
+      </file>
       <file name="page-placeholder.tsx" path="/home/boruto/movie-track-web/src/components/page-placeholder.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="12" count="22" type="stmt"/>
@@ -181,6 +187,10 @@
         <line num="17" count="1" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
         <line num="29" count="2" type="stmt"/>
+      </file>
+      <file name="session-splash.tsx" path="/home/boruto/movie-track-web/src/components/session-splash.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="3" type="stmt"/>
       </file>
       <file name="toaster.tsx" path="/home/boruto/movie-track-web/src/components/toaster.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -230,11 +240,11 @@
       <metrics statements="5" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
       <file name="env.ts" path="/home/boruto/movie-track-web/src/config/env.ts">
         <metrics statements="5" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
-        <line num="3" count="19" type="stmt"/>
-        <line num="7" count="19" type="stmt"/>
-        <line num="8" count="19" type="cond" truecount="1" falsecount="1"/>
+        <line num="3" count="20" type="stmt"/>
+        <line num="7" count="20" type="stmt"/>
+        <line num="8" count="20" type="cond" truecount="1" falsecount="1"/>
         <line num="9" count="0" type="stmt"/>
-        <line num="14" count="19" type="stmt"/>
+        <line num="14" count="20" type="stmt"/>
       </file>
     </package>
     <package name="src.features.account.pages">
@@ -332,24 +342,24 @@
       <metrics statements="131" coveredstatements="130" conditionals="18" coveredconditionals="15" methods="89" coveredmethods="88"/>
       <file name="auth.queries.ts" path="/home/boruto/movie-track-web/src/hooks/queries/auth.queries.ts">
         <metrics statements="23" coveredstatements="23" conditionals="4" coveredconditionals="4" methods="15" coveredmethods="15"/>
-        <line num="9" count="13" type="stmt"/>
+        <line num="9" count="14" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
-        <line num="18" count="13" type="stmt"/>
+        <line num="18" count="14" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
         <line num="21" count="1" type="stmt"/>
-        <line num="29" count="13" type="stmt"/>
-        <line num="33" count="13" type="stmt"/>
+        <line num="29" count="14" type="stmt"/>
+        <line num="33" count="14" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
-        <line num="39" count="13" type="stmt"/>
+        <line num="39" count="14" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
-        <line num="45" count="13" type="stmt"/>
+        <line num="45" count="14" type="stmt"/>
         <line num="46" count="1" type="stmt"/>
-        <line num="51" count="13" type="stmt"/>
+        <line num="51" count="14" type="stmt"/>
         <line num="53" count="2" type="stmt"/>
         <line num="54" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="55" count="1" type="stmt"/>
         <line num="57" count="1" type="stmt"/>
-        <line num="63" count="13" type="stmt"/>
+        <line num="63" count="14" type="stmt"/>
         <line num="65" count="2" type="stmt"/>
         <line num="66" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="67" count="1" type="stmt"/>
@@ -366,26 +376,26 @@
         <line num="20" count="1" type="stmt"/>
         <line num="26" count="2" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
-        <line num="34" count="41" type="stmt"/>
-        <line num="35" count="41" type="stmt"/>
+        <line num="34" count="47" type="stmt"/>
+        <line num="35" count="47" type="stmt"/>
         <line num="36" count="8" type="stmt"/>
-        <line num="43" count="6" type="stmt"/>
-        <line num="44" count="6" type="stmt"/>
+        <line num="43" count="7" type="stmt"/>
+        <line num="44" count="7" type="stmt"/>
         <line num="45" count="1" type="stmt"/>
-        <line num="51" count="6" type="stmt"/>
-        <line num="52" count="6" type="stmt"/>
+        <line num="51" count="7" type="stmt"/>
+        <line num="52" count="7" type="stmt"/>
         <line num="54" count="1" type="stmt"/>
-        <line num="60" count="6" type="stmt"/>
-        <line num="61" count="6" type="stmt"/>
+        <line num="60" count="7" type="stmt"/>
+        <line num="61" count="7" type="stmt"/>
         <line num="62" count="1" type="stmt"/>
-        <line num="68" count="6" type="stmt"/>
-        <line num="69" count="6" type="stmt"/>
+        <line num="68" count="7" type="stmt"/>
+        <line num="69" count="7" type="stmt"/>
         <line num="71" count="1" type="stmt"/>
-        <line num="77" count="6" type="stmt"/>
-        <line num="78" count="6" type="stmt"/>
+        <line num="77" count="7" type="stmt"/>
+        <line num="78" count="7" type="stmt"/>
         <line num="80" count="1" type="stmt"/>
-        <line num="86" count="6" type="stmt"/>
-        <line num="87" count="6" type="stmt"/>
+        <line num="86" count="7" type="stmt"/>
+        <line num="87" count="7" type="stmt"/>
         <line num="88" count="1" type="stmt"/>
         <line num="95" count="5" type="stmt"/>
         <line num="96" count="5" type="stmt"/>
@@ -432,20 +442,20 @@
         <line num="43" count="1" type="stmt"/>
         <line num="49" count="2" type="stmt"/>
         <line num="51" count="1" type="stmt"/>
-        <line num="59" count="17" type="stmt"/>
-        <line num="60" count="17" type="stmt"/>
+        <line num="59" count="14" type="stmt"/>
+        <line num="60" count="14" type="stmt"/>
         <line num="62" count="4" type="stmt"/>
         <line num="63" count="4" type="cond" truecount="2" falsecount="0"/>
         <line num="64" count="1" type="stmt"/>
         <line num="66" count="3" type="stmt"/>
         <line num="69" count="3" type="stmt"/>
         <line num="70" count="3" type="stmt"/>
-        <line num="76" count="7" type="stmt"/>
+        <line num="76" count="6" type="stmt"/>
         <line num="77" count="1" type="stmt"/>
-        <line num="82" count="5" type="stmt"/>
+        <line num="82" count="4" type="stmt"/>
         <line num="83" count="1" type="stmt"/>
-        <line num="88" count="5" type="stmt"/>
-        <line num="92" count="7" type="stmt"/>
+        <line num="88" count="4" type="stmt"/>
+        <line num="92" count="6" type="stmt"/>
         <line num="94" count="2" type="stmt"/>
         <line num="95" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="96" count="1" type="stmt"/>
@@ -487,11 +497,11 @@
       <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="8" coveredmethods="8"/>
       <file name="app-layout.tsx" path="/home/boruto/movie-track-web/src/layouts/app-layout.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="6" count="10" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
       </file>
       <file name="auth-layout.tsx" path="/home/boruto/movie-track-web/src/layouts/auth-layout.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
       </file>
       <file name="main-navigation.tsx" path="/home/boruto/movie-track-web/src/layouts/main-navigation.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -504,7 +514,7 @@
       </file>
       <file name="public-layout.tsx" path="/home/boruto/movie-track-web/src/layouts/public-layout.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
       </file>
       <file name="root-layout.tsx" path="/home/boruto/movie-track-web/src/layouts/root-layout.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -542,24 +552,24 @@
       <metrics statements="11" coveredstatements="11" conditionals="7" coveredconditionals="7" methods="3" coveredmethods="3"/>
       <file name="query-client.ts" path="/home/boruto/movie-track-web/src/lib/react-query/query-client.ts">
         <metrics statements="11" coveredstatements="11" conditionals="7" coveredconditionals="7" methods="3" coveredmethods="3"/>
-        <line num="6" count="19" type="stmt"/>
-        <line num="7" count="19" type="stmt"/>
-        <line num="10" count="19" type="stmt"/>
-        <line num="16" count="19" type="stmt"/>
+        <line num="6" count="20" type="stmt"/>
+        <line num="7" count="20" type="stmt"/>
+        <line num="10" count="20" type="stmt"/>
+        <line num="16" count="20" type="stmt"/>
         <line num="19" count="11" type="stmt"/>
         <line num="20" count="11" type="cond" truecount="2" falsecount="0"/>
         <line num="21" count="2" type="stmt"/>
         <line num="32" count="8" type="stmt"/>
         <line num="33" count="8" type="cond" truecount="3" falsecount="0"/>
-        <line num="37" count="65" type="stmt"/>
-        <line num="53" count="19" type="stmt"/>
+        <line num="37" count="66" type="stmt"/>
+        <line num="53" count="20" type="stmt"/>
       </file>
     </package>
     <package name="src.lib.session">
       <metrics statements="36" coveredstatements="35" conditionals="10" coveredconditionals="8" methods="12" coveredmethods="12"/>
       <file name="refresh-token.storage.ts" path="/home/boruto/movie-track-web/src/lib/session/refresh-token.storage.ts">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="1" count="19" type="stmt"/>
+        <line num="1" count="20" type="stmt"/>
         <line num="5" count="19" type="stmt"/>
         <line num="6" count="19" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
@@ -650,25 +660,24 @@
       </file>
     </package>
     <package name="src.routes">
-      <metrics statements="52" coveredstatements="52" conditionals="20" coveredconditionals="20" methods="33" coveredmethods="33"/>
+      <metrics statements="51" coveredstatements="51" conditionals="20" coveredconditionals="20" methods="32" coveredmethods="32"/>
       <file name="guards.tsx" path="/home/boruto/movie-track-web/src/routes/guards.tsx">
-        <metrics statements="16" coveredstatements="16" conditionals="8" coveredconditionals="8" methods="5" coveredmethods="5"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="10" count="50" type="stmt"/>
-        <line num="11" count="13" type="stmt"/>
-        <line num="13" count="13" type="cond" truecount="2" falsecount="0"/>
+        <metrics statements="15" coveredstatements="15" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
+        <line num="7" count="50" type="stmt"/>
+        <line num="8" count="13" type="stmt"/>
+        <line num="10" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="12" type="cond" truecount="2" falsecount="0"/>
         <line num="14" count="1" type="stmt"/>
-        <line num="16" count="12" type="cond" truecount="2" falsecount="0"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="20" count="11" type="stmt"/>
-        <line num="24" count="22" type="stmt"/>
-        <line num="25" count="6" type="stmt"/>
-        <line num="27" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="11" type="stmt"/>
+        <line num="21" count="22" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="24" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="27" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="28" count="1" type="stmt"/>
-        <line num="30" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="33" count="4" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
       </file>
       <file name="not-found.page.tsx" path="/home/boruto/movie-track-web/src/routes/not-found.page.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -723,7 +732,7 @@
       <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="1" methods="7" coveredmethods="7"/>
       <file name="session.store.ts" path="/home/boruto/movie-track-web/src/stores/session.store.ts">
         <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="4"/>
-        <line num="19" count="19" type="stmt"/>
+        <line num="19" count="20" type="stmt"/>
         <line num="25" count="8" type="stmt"/>
         <line num="26" count="8" type="cond" truecount="1" falsecount="1"/>
         <line num="29" count="7" type="stmt"/>

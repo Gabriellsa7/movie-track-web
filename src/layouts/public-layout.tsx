@@ -1,11 +1,14 @@
 import { Link, Outlet } from 'react-router';
+import { Logo } from '@/components/logo';
 import { ROUTES } from '@/routes/routes.constants';
 
 export function PublicLayout() {
   return (
     <div>
       <header>
-        <Link to={ROUTES.home}>Movie Track</Link>
+        <Link to={ROUTES.home}>
+          <Logo />
+        </Link>
         <nav aria-label="Menu público">
           <Link to={ROUTES.users}>Usuários</Link>
           <Link to={ROUTES.login}>Entrar</Link>

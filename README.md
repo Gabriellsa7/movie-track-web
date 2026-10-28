@@ -80,8 +80,12 @@ yarn format:check && yarn lint && yarn lint:styles && yarn typecheck && yarn tes
 `vite-plugin-pwa` makes the app installable (manifest in pt-BR, icons in
 `public/`). The service worker precaches the app shell and fonts only; API
 data always comes from the network. A new version shows a "Nova versão
-disponível" toast and reloads only when the user taps "Atualizar". The icons
-are placeholders until the logo exists.
+disponível" toast and reloads only when the user taps "Atualizar".
+
+The logo (a cinema ticket with the rating star) lives in
+`src/components/logo.tsx` as `Logo` and `LogoMark`, colored by the theme
+tokens. The favicon and the PWA icons in `public/` are drawn from the same
+64-unit grid.
 
 ## Tests
 
