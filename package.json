@@ -31,6 +31,8 @@
     "*.{js,json,md,html,yml,yaml}": "prettier --write"
   },
   "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource/bebas-neue": "^5.3.0",
     "@hookform/resolvers": "^6.0.2",
     "@tanstack/react-query": "^5.105.0",
     "axios": "^1.21.0",
@@ -63,6 +65,7 @@
     "openapi-typescript": "^7.13.0",
     "postcss": "^8.5.32",
     "prettier": "^3.9.10",
+    "sass-embedded": "^1.106.1",
     "stylelint": "^17.16.0",
     "stylelint-config-recess-order": "^7.9.0",
     "stylelint-config-standard-scss": "^17.0.0",

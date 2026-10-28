@@ -1,0 +1,37 @@
+// Bebas Neue only for titles and big numbers; everything else is Inter (FQ-26).
+
+@mixin display($size) {
+  font-family: var(--font-display);
+  font-size: $size;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+@mixin heading-section {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@mixin heading-card {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@mixin body {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+@mixin caption {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+@mixin overline {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}

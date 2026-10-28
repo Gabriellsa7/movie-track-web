@@ -1,0 +1,98 @@
+// Design tokens from the approved mockups (FQ-25). Components read only these variables.
+
+:root,
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --color-background: #0f1115;
+  --color-sidebar: #13161b;
+  --color-surface: #1a1d24;
+  --color-surface-2: #232731;
+  --color-border: #2c313c;
+  --color-border-strong: #3a3f4b;
+  --color-text: #e8e6e3;
+  --color-text-soft: #c9c7c3;
+  --color-text-muted: #8a8f98;
+  --color-accent: #f5b83d;
+  --color-accent-hover: #ffd27a;
+  --color-accent-text: #f5b83d;
+  --color-on-accent: #0f1115;
+  --color-accent-soft: #2a2418;
+  --color-accent-border: #4a3b1c;
+  --color-danger: #f28b82;
+  --color-danger-soft: #2e1c1c;
+  --color-success: #5bc08a;
+  --color-success-soft: #16261e;
+  --color-success-border: #24503a;
+  --color-star-empty: #4a505c;
+  --color-overlay: rgb(7 8 10 / 78%);
+  --shadow-raised: 0 8px 24px rgb(0 0 0 / 45%);
+  --shadow-dialog: 0 24px 64px rgb(0 0 0 / 50%);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --color-background: #f7f5f1;
+  --color-sidebar: #efece6;
+  --color-surface: #fff;
+  --color-surface-2: #efece6;
+  --color-border: #ddd8cf;
+  --color-border-strong: #cfc9be;
+  --color-text: #17191e;
+  --color-text-soft: #3a3d44;
+  --color-text-muted: #5e636b;
+  --color-accent: #f5b83d;
+  --color-accent-hover: #e0a52c;
+  --color-accent-text: #8a5a00;
+  --color-on-accent: #0f1115;
+  --color-accent-soft: #fbefd3;
+  --color-accent-border: #ebcb86;
+  --color-danger: #b3261e;
+  --color-danger-soft: #fbe9e7;
+  --color-success: #1e7a4c;
+  --color-success-soft: #e3f3ea;
+  --color-success-border: #a8d8bd;
+  --color-star-empty: #cfc9be;
+  --color-overlay: rgb(23 25 30 / 45%);
+  --shadow-raised: 0 8px 24px rgb(23 25 30 / 15%);
+  --shadow-dialog: 0 24px 64px rgb(23 25 30 / 20%);
+}
+
+:root {
+  --font-sans: 'Inter Variable', system-ui, sans-serif;
+  --font-display: 'Bebas Neue', 'Inter Variable', sans-serif;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-pill: 999px;
+
+  --control-height: 44px;
+  --control-height-lg: 52px;
+  --sidebar-width: 248px;
+  --bottom-nav-height: 84px;
+  --content-max-width: 1120px;
+
+  --z-sticky: 10;
+  --z-nav: 20;
+  --z-overlay: 30;
+  --z-dialog: 40;
+  --z-toast: 50;
+
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --easing-standard: cubic-bezier(0.2, 0, 0, 1);
+}

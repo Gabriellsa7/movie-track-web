@@ -62,6 +62,17 @@ Before opening a PR:
 yarn format:check && yarn lint && yarn lint:styles && yarn typecheck && yarn build
 ```
 
+## Styles
+
+- Design tokens (colors for the dark and light themes, spacing, radius,
+  z-index, durations) are CSS variables in `src/styles/_tokens.scss`; the theme
+  is the `data-theme` attribute on `<html>`.
+- One SCSS module per component (`movie-card.module.scss`), kebab-case classes
+  read as camelCase (`styles.movieCard`). Use the breakpoints (`up(lg)`),
+  `focus-ring` and `visually-hidden` from `src/styles/_mixins.scss` and the
+  type mixins from `_typography.scss`.
+- Inter and Bebas Neue are self-hosted through Fontsource.
+
 ## Conventions
 
 - Files in kebab-case (`movie-card.tsx`, `movie-card.module.scss`); components

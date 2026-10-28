@@ -1,3 +1,6 @@
+import '@fontsource-variable/inter';
+import '@fontsource/bebas-neue';
+import '@/styles/global.scss';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { App } from '@/app';
