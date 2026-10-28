@@ -16,10 +16,10 @@ declare module 'axios' {
 }
 
 export interface ISessionHandlers {
-  getAccessToken(): string | null;
+  getAccessToken: () => string | null;
   // Exchanges the stored refresh token and resolves with the new access token.
-  refreshAccessToken(): Promise<string>;
-  onSessionExpired(): void;
+  refreshAccessToken: () => Promise<string>;
+  onSessionExpired: () => void;
 }
 
 let sessionHandlers: ISessionHandlers | null = null;

@@ -28,5 +28,8 @@ jobs:
       - name: Typecheck
         run: yarn typecheck
 
+      - name: Tests with coverage threshold (80%)
+        run: yarn test:coverage
+
       - name: Build
         run: yarn build

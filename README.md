@@ -55,11 +55,13 @@ app as an `ApiError` with the contract's `code` (`src/api/error-codes.ts`).
 | `yarn lint:styles`             | Stylelint on `src/**/*.scss`              |
 | `yarn format` / `format:check` | Prettier                                  |
 | `yarn gen:api`                 | Regenerate `src/api/schema.d.ts`          |
+| `yarn test` / `test:watch`     | Vitest                                    |
+| `yarn test:coverage`           | Tests with the 80% coverage threshold     |
 
 Before opening a PR:
 
 ```bash
-yarn format:check && yarn lint && yarn lint:styles && yarn typecheck && yarn build
+yarn format:check && yarn lint && yarn lint:styles && yarn typecheck && yarn test:coverage && yarn build
 ```
 
 ## Styles
@@ -72,6 +74,18 @@ yarn format:check && yarn lint && yarn lint:styles && yarn typecheck && yarn bui
   `focus-ring` and `visually-hidden` from `src/styles/_mixins.scss` and the
   type mixins from `_typography.scss`.
 - Inter and Bebas Neue are self-hosted through Fontsource.
+
+## Tests
+
+Vitest with jsdom, Testing Library and MSW. Test files sit next to the code
+(`client.test.ts`), named `describe('When we …')` / `it('should …')`.
+
+- `src/test/setup.ts` starts the MSW server (unhandled requests fail the test)
+  and resets the session, the query cache and `localStorage` after each test.
+- `src/test/render.tsx` renders with a fresh QueryClient (no retries) and a
+  memory router: `renderRoutes(routes, '/movies')`.
+- The jsdom page runs on the API origin (`http://api.test`), so the mocked
+  calls are same-origin.
 
 ## Conventions
 

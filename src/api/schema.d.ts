@@ -616,7 +616,7 @@ export interface components {
             /** @description How many times it was watched (defaults to 1); POST /movies/{id}/rewatch adds one */
             watchCount?: number;
             /** @default false */
-            isFavorite: boolean;
+            isFavorite?: boolean;
             tmdbId?: number;
             /** @description An external poster URL */
             posterUrl?: string;
@@ -650,7 +650,7 @@ export interface components {
             /** @description How many times it was watched (defaults to 1); POST /movies/{id}/rewatch adds one */
             watchCount?: number;
             /** @default false */
-            isFavorite: boolean;
+            isFavorite?: boolean;
             tmdbId?: number;
             /** @description An external poster URL; null removes the poster */
             posterUrl?: string | null;
