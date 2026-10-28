@@ -75,6 +75,14 @@ yarn format:check && yarn lint && yarn lint:styles && yarn typecheck && yarn tes
   type mixins from `_typography.scss`.
 - Inter and Bebas Neue are self-hosted through Fontsource.
 
+## PWA
+
+`vite-plugin-pwa` makes the app installable (manifest in pt-BR, icons in
+`public/`). The service worker precaches the app shell and fonts only; API
+data always comes from the network. A new version shows a "Nova versão
+disponível" toast and reloads only when the user taps "Atualizar". The icons
+are placeholders until the logo exists.
+
 ## Tests
 
 Vitest with jsdom, Testing Library and MSW. Test files sit next to the code

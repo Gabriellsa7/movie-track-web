@@ -1,6 +1,7 @@
 import { QueryClientProvider } from '@tanstack/react-query';
 import { lazy, Suspense, type ReactNode } from 'react';
 import { Tooltip } from 'radix-ui';
+import { PwaUpdatePrompt } from '@/components/pwa-update-prompt';
 import { Toaster } from '@/components/toaster';
 import { queryClient } from '@/lib/react-query/query-client';
 import { useApplyTheme } from '@/lib/theme/use-apply-theme';
@@ -21,6 +22,7 @@ export function Providers({ children }: { children: ReactNode }) {
     <QueryClientProvider client={queryClient}>
       <Tooltip.Provider delayDuration={300}>{children}</Tooltip.Provider>
       <Toaster />
+      <PwaUpdatePrompt />
       {ReactQueryDevtools && (
         <Suspense fallback={null}>
           <ReactQueryDevtools buttonPosition="bottom-left" />
