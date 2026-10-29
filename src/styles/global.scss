@@ -20,8 +20,8 @@ body {
   font-family: var(--font-sans);
   font-size: 15px;
   line-height: 1.5;
-  color: var(--color-text);
-  background: var(--color-background);
+  color: var(--primary-text-color);
+  background: var(--primary-bg-color);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -46,11 +46,11 @@ button {
 }
 
 a {
-  color: var(--color-accent-text);
+  color: var(--accent-text-color);
   text-decoration: none;
 
   &:hover {
-    color: var(--color-accent-hover);
+    color: var(--accent-hover-bg-color);
   }
 }
 

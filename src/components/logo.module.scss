@@ -7,9 +7,9 @@
 }
 
 .wordmark {
-  @include typography.display(28px);
+  @include typography.stat;
 
-  color: var(--color-text);
+  color: var(--primary-text-color);
 }
 
 .mark {
@@ -18,21 +18,21 @@
 
 .tile,
 .star {
-  fill: var(--color-accent);
+  fill: var(--accent-bg-color);
 }
 
 .star {
-  stroke: var(--color-accent);
+  stroke: var(--accent-bg-color);
   stroke-width: 1.6;
   stroke-linejoin: round;
 }
 
 .ticket {
-  fill: var(--color-on-accent);
+  fill: var(--on-accent-text-color);
 }
 
 .perforation {
-  stroke: var(--color-accent);
+  stroke: var(--accent-bg-color);
   stroke-width: 2;
   stroke-dasharray: 3 2.5;
 }
